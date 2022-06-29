@@ -76,7 +76,6 @@ function deleteSystem(obj) {
 
 
     let IdOflineToDelete = document.querySelector(`#${obj.id.slice(4)}`);
-    console.log(`#${obj.id.slice(4)}`)
 
     parant.removeChild(IdOflineToDelete);
     n--;
@@ -117,7 +116,6 @@ function sortRovNumber() {
     for (let i = 0; i < listNumberRow.length; i++) {
         listNumberRow[i].innerHTML = `${i+1}`;
     }
-    console.log(listNumberRow);
 }
 
 // let acceptChangeBotton = systemManagement.acceptChange;
@@ -136,7 +134,7 @@ function sortRovNumber() {
 
 
 
-acceptChangeBotton.addEventListener('click', TochangeSystem)
+// acceptChangeBotton.addEventListener('click', TochangeSystem)
 
 
 
