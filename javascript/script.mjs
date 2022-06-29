@@ -1,4 +1,4 @@
-// import addNewSystem from "../Events/Botton/ChooseSystem/addNewSystem.js"
+import { webpack } from "webpack";
 
 const limitOfSystem = 9
 let n = 0
@@ -96,7 +96,8 @@ function sortRovNumber() {
 
 
 
-acceptChangeBotton.addEventListener('click', TochangeSystem)
+// acceptChangeBotton.addEventListener('click', TochangeSystem)
+
 
 
 
