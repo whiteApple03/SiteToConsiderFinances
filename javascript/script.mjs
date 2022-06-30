@@ -1,3 +1,5 @@
+import { globalVars } from '../vars/globalVars.mjs';
+
 
 
 const limitOfSystem = 9

@@ -1,7 +1,7 @@
 
-export default class financialSystem {
-    addNewCategory() {
-        alert("i've done it")
+// export default class financialSystem {
+//     addNewCategory() {
+//         alert("i've done it")
         
-    }
-}
+//     }
+// }
