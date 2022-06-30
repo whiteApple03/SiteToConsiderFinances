@@ -1,3 +1,3 @@
 export const globalVars = {
-    'n': 0
+    n: 0
 }

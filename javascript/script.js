@@ -1,9 +1,10 @@
-import { globalVars } from '../vars/globalVars.mjs';
+import { globalVars } from '../vars/globalVars.js';
+globalVars.n += 1
+// alert(globalVars.n)
+import '../my.js';
 
-
-
-const limitOfSystem = 9
-let n = 0
+const limitOfSystem = 9;
+let n = 0;
 
 function getNextTableElement(numberOfRow, now) {
     switch(numberOfRow) {
