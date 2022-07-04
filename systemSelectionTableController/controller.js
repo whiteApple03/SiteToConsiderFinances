@@ -1,3 +1,3 @@
-export const getNextTableElement = () => {
+// export const getNextTableElement = () => {
     
-}
+// }
