@@ -1,7 +1,7 @@
-
+import * as CSTabCont from '../ChooseSystemTableController/controller.js'
+import { n } from '../Vars/GlobakVars.json';
 
 const limitOfSystem = 9
-let n = 0
 
 function getNextTableElement(numberOfRow, now) {
     switch(numberOfRow) {
@@ -21,7 +21,7 @@ function getNextTableElement(numberOfRow, now) {
             return `<td>${(now.getDate() < 10) ? '0':''}${now.getDate()}-${(now.getMonth()+1 < 10) ? '0':''}${now.getMonth()+1}-${now.getFullYear()}</td>`;
             break;
         case 5:
-            return `<td class="delete-system"><bottom id="buttrow${n}" class="bottom-delete-system" onclick="deleteSystem(this)"><img class="icon-delete" src="icon/deleteElement.png" alt="Удалить Систему"></bottom></td>`;
+            return `<td class="delete-system"><bottom id="buttrow${n}" class="bottom-delete-system" onclick="deleteSystem(this)"><img class="icon-delete" src="./icon/deleteElement.png" alt="Удалть Систему"></bottom></td>`;
 
     }   
 }
