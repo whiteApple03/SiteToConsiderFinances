@@ -1,7 +1,9 @@
-import {getNextTableElement, } from '../../passiveFunctions/getNextTableElement'; '../passuveFunctions/getNextTableElement';
-import { sortRovNumber } from '../../passiveFunctions/sortRovNumber';
 
-import { n, limitOfSystem } from '../../Vars/GlobalVars.json';
+import {getNextTableElement} from '../../passiveFunctions/getNextTableElement.js'; 
+import { sortRovNumber } from '../../passiveFunctions/sortRovNumber.js';
+
+
+import { n, limitOfSystem } from './Vars/GlobalVars.json';
 
 export function addNewSystem(button) {
     
