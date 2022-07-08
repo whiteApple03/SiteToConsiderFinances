@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+    <%- include('./Elements/heads/mainHead') %> 
+    <body>
+        <div class="flex-conteiner">
+            <header>
+                <%- include('./Elements/navBars/mainNav'); %> 
+            </header>
+
+                    <main>
+                        <aside></aside>
+                        <section class="content PageTable">
+                            <h1 class="block-heading">Список систем:</h1>
+                            
+                            <section class="section-table">
+                                <div class="main-table">
+                                    <table>
+                                        <caption>Ваши финансовые Системы</caption>
+                                        <thead>
+                                            <tr>
+                                                
+                                                <th>№</th>
+                                                <th>название системы</th>
+                                                <th>Цель</th>
+                                                <th>Последние Вхождение</th>
+                                                <th>Дата создания</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="placeForNewSystem"></tbody>
+                                    </table>
+                                </div>
+                                <div class="table-foot">
+                                    <div>
+                                        <span id="noActiveSystem">У вас пока нет активных систем</span>
+                                    </div>
+                                    <button class="bottom-add-new-system" id="elem">
+                                        <span class="text-bottom">Создать новую систему</span>
+                                        <img class="icon-plus" src="icon/plus.png" alt="plus">
+                                    </button>
+                                </div>
+                            </section>
+                        </section>
+                        <aside></aside>
+
+                    </main>
+
+                    <%- include('./Elements/Footers/mainFooter'); %> 
+
+
+            </div>
+
+        </body>
+
+    <!-- <script src="javascript/script.js" type="module"></script> -->
+</html>

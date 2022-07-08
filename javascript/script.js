@@ -3,24 +3,25 @@ import  express, { json }  from 'express';
 import path from 'path';
 
 import { app } from '../Express/StartingApp/initializationApp.js';
-import GlobalVars from '../Vars/GlobalVars.json' assert {type: "json"};
-console.log();
-// import '../Buttons/EventsOfButton/addNewSystem.js';
-
+import '../Buttons/EventsOfButton/addNewSystem.js';
+console.log(GlobalVars.n)
 const __dirname = path.resolve();
 const PORT = process.env.PORT ?? 3000;
 
 
 
 
-app.use(express.static(path.resolve(__dirname, 'PagesHTML')));
+app.use(express.static(path.resolve(__dirname, 'static')));
 app.set('view engine', 'ejs');
 
 
 
-app.get('/statistick', (req, res) => {
-    res.send(`${JSON.stringify(GlobalVars)}`)
-    res.sendFile(__dirname, 'Vars/GlobalVars.json')
+app.get('/', (req, res) => {
+    res.render('index');
+});
+
+app.get('/table', (req, res) => {
+    res.render('table');
 });
 
 app.listen(PORT, (err) => {

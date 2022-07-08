@@ -1,5 +1,8 @@
-import { n } from '../Vars/GlobalVars.json'
-import deleteIcon from '../icon/deleteElement.png'
+import GlobalVars from '../Vars/GlobalVars.json' assert {type: "json"};
+// import deleteIcon from '../static/icon/deleteElement.png' assert {type: "png"};
+
+let n = GlobalVars.n;
+
 
 export  function getNextTableElement(numberOfRow, now) {
     switch(numberOfRow) {
@@ -19,7 +22,7 @@ export  function getNextTableElement(numberOfRow, now) {
             return `<td>${(now.getDate() < 10) ? '0':''}${now.getDate()}-${(now.getMonth()+1 < 10) ? '0':''}${now.getMonth()+1}-${now.getFullYear()}</td>`;
             break;
         case 5:
-            return `<td class="delete-system"><bottom id="buttrow${n}" class="bottom-delete-system" ><img class="icon-delete" src=${deleteIcon} alt="Удалть Систему"></bottom></td>`;
+            return `<td class="delete-system"><bottom id="buttrow${n}" class="bottom-delete-system" ><img class="icon-delete" src="../static/icon/deleteElement.png" alt="Удалть Систему"></bottom></td>`;
 
     }   
 }
