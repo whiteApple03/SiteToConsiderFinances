@@ -1,7 +1,12 @@
-import {getNextTableElement, } from '../../passiveFunctions/getNextTableElement'; '../passuveFunctions/getNextTableElement';
-import { sortRovNumber } from '../../passiveFunctions/sortRovNumber';
+import assert from 'assert';
+import { type } from 'os';
+import {getNextTableElement } from '../../passiveFunctions/getNextTableElement.js';
+import { sortRovNumber } from '../../passiveFunctions/sortRovNumber.js';
 
-import { n, limitOfSystem } from '../../Vars/GlobalVars.json';
+import GlobalVars from '../../Vars/GlobalVars.json' assert { type: "json"};
+
+let n = GlobalVars.n;
+let limitOfSystem = GlobalVars.limitOfSystem;
 
 export function addNewSystem(button) {
     
